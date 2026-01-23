@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EP Hardware | Coimbatore</title>
+  <meta name="description" content="Reliable hardware supplies, tools, building materials, and project support. Visit our showroom or request a quote." />
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <span>📍 R.S. Puram, Coimbatore</span>
+        <span class="sep">•</span>
+        <a href="tel:+440000000000">📞 +91 92444 44922</a>
+        <span class="sep">•</span>
+        <a href="mailto:hello@yourhardware.com">✉️ ephwcbe@gmail.com</a>
+      </div>
+      <div class="topbar__right">
+        <a class="chip" href="#contact">Request a Quote</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+    <a class="logo" href="#top">
+  <img src="logo.png" alt="Your Hardware Logo" class="logo-img">
+  </a>
+
+      <nav class="nav" id="nav">
+        <a href="#services">Services</a>
+        <a href="#categories">Categories</a>
+        <a href="#brands">Brands</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav__cta">Contact</a>
+      </nav>
+
+      <button class="menuBtn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <p class="badge">Trusted Hardware & Building Supplies</p>
+        <h1> EP Hardawre </h1>
+        <p>Everything for repairs, renovations, and construction — in one place.</p>
+        <p class="muted">
+          Tools, Hardawre Materials, Kitchen Accessories, Plywood, Lminate Sheets and all kind of verities and 
+          materials Avilable. 
+          Visit our showroom or request a quote for your project By call or you can fill the form.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contact">Request a Quote</a>
+          <a class="btn btn--ghost" href="#categories">Explore Categories</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat">
+            <div class="stat__num">15+ yrs</div>
+            <div class="stat__label">Serving local projects</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">500+</div>
+            <div class="stat__label">Common items in stock</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">Same-day</div>
+            <div class="stat__label">Pickup & delivery options</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__card">
+        <div class="card">
+          <h3>Open hours</h3>
+          <ul class="list">
+            <li><span>Mon–Fri</span><span>9:00 Am – 7:30 pm</span></li>
+            <li><span>Saturday</span><span>9:00 Am – 7:30 pm</span></li>
+            <li><span>Sunday</span><span>Closed</span></li>
+          </ul>
+
+          <div class="divider"></div>
+
+          <h3>Quick contact</h3>
+          <div class="quick">
+            <a class="btn btn--small" href="tel:+919244444922">Call</a>
+            <a class="btn btn--small btn--ghost" target="_blank" rel="noreferrer"
+               href="https://wa.me/919244444922?text=Hello%20I%20need%20a%20quote%20for%20hardware%20items">
+              WhatsApp
+            </a>
+            <a class="btn btn--small btn--ghost" href="#contact">Email</a>  
+          </div>
+
+          <p class="muted small">
+            *Right now we don't have online checkout — we confirm availability and pricing by call/message.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section__head">
+        <h2>Services</h2>
+      </div>
+
+      <div class="grid3">
+        <div class="feature">
+          <div class="icon">🧰</div>
+          <h3>Project guidance</h3>
+          <p class="muted">Tell us what you’re building or fixing — we’ll recommend materials and quantities.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">📦</div>
+          <h3>Special orders</h3>
+          <p class="muted">Need a specific brand or size? We can source items quickly from suppliers.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🚚</div>
+          <h3>Pickup & delivery</h3>
+          <p class="muted">Convenient pickup or local delivery for bulky items and contractor orders.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="section section--alt" id="categories">
+    <div class="container">
+      <div class="section__head">
+        <h2>Product categories</h2>
+      </div>
+
+      <div class="grid4" id="categoryGrid">
+        <!-- JS fills these -->
+      </div>
+
+      <div class="modal" id="modal" aria-hidden="true">
+        <div class="modal__backdrop" data-close="true"></div>
+        <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+          <div class="modal__top">
+            <h3 id="modalTitle">Category</h3>
+            <button class="iconBtn" id="modalClose" aria-label="Close">✕</button>
+          </div>
+          <p class="muted" id="modalDesc"></p>
+          <ul class="bullets" id="modalList"></ul>
+          <div class="modal__actions">
+            <a class="btn btn--primary" href="#contact">Request quote for this</a>
+            <button class="btn btn--ghost" id="modalClose2">Close</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Brands -->
+  <section class="section" id="brands">
+    <div class="container">
+      <div class="section__head">
+        <h2>Brands we carry</h2>
+      </div>
+
+      <div class="brandRow">
+        <div class="brand">Godrej</div>
+        <div class="brand">Hettich</div>
+        <div class="brand">Europa</div>
+        <div class="brand">Yale</div>
+        <div class="brand">Salvor</div>
+        <div class="brand">Archis</div>
+        <div class="brand">Italica</div>
+        <div class="brand">Vivid</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section section--alt" id="gallery">
+    <div class="container">
+      <div class="section__head">
+        <h2>Gallery</h2>
+      </div>
+
+  <div class="gallery">
+  <div class="gallery-item">
+    <img src="lock 1.jpeg" alt="Hardware store storefront">
+  </div>
+
+  <div class="gallery-item">
+    <img src="lock 2.jpeg" alt="Store aisles">
+  </div>
+
+  <div class="gallery-item">
+    <img src="lock 3.jpeg" alt="Hardware tools section">
+  </div>
+
+  <div class="gallery-item">
+    <img src="lock 4.jpeg" alt="Paint section">
+  </div>
+
+  <div class="gallery-item">
+    <img src="lock 5.jpeg" alt="Plumbing supplies">
+  </div>
+
+  <div class="gallery-item">
+    <img src="lock 6.jpeg" alt="Delivery vehicle">
+  </div>
+</div>
+
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>What customers say</h2>
+      </div>
+
+      <div class="grid3">
+        <div class="quote">
+          <p>“Fast service and they always have the small parts I need.”</p>
+          <span class="muted">— Local homeowner</span>
+        </div>
+        <div class="quote">
+          <p>“Good advice on materials. Saved me time on the job.”</p>
+          <span class="muted">— Contractor</span>
+        </div>
+        <div class="quote">
+          <p>“Reliable stock and quick delivery for bulky orders.”</p>
+          <span class="muted">— Facilities manager</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <h2>FAQ</h2>
+      </div>
+
+      <div class="faq" id="faq">
+        <button class="faq__q" aria-expanded="false">
+          Do you offer delivery?
+          <span class="faq__icon">+</span>
+        </button>
+        <div class="faq__a">
+          Yes — local delivery is available for qualifying orders. Contact us with your items and address.
+        </div>
+
+        <button class="faq__q" aria-expanded="false">
+          Can I request a quote without visiting?
+          <span class="faq__icon">+</span>
+        </button>
+        <div class="faq__a">
+          Absolutely. Send a list by WhatsApp/email, and we’ll confirm availability and pricing.
+        </div>
+
+        <button class="faq__q" aria-expanded="false">
+          Do you supply contractors and businesses?
+          <span class="faq__icon">+</span>
+        </button>
+        <div class="faq__a">
+          Yes — we support trade accounts, recurring orders, and bulk supply.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container about">
+      <div>
+        <div class="section__head">
+          <h2>About us</h2>
+          <p class="muted">
+           We are a trusted local hardware supplier committed to providing high-quality materials and reliable brands 
+           at affordable prices. From everyday repair essentials to construction and project supplies,
+            we ensure every product meets industry standards for durability and performance.
+             Our experienced team offers practical guidance to help you choose the right materials, saving you time, effort,
+              and cost while delivering dependable solutions for every project.
+          </p>
+        </div>
+
+        <div class="ticks">
+          <div>✅ Quality tools & materials</div>
+          <div>✅ Friendly expert advice</div>
+          <div>✅ Contractor-friendly service</div>
+          <div>✅ Special orders available</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Service area</h3>
+        <p class="muted">1st FLOOR, 1015, Mettupalayam Rd, near Crosscut Signal,
+                    R.S. Puram, Coimbatore, Tamil Nadu 641002, India</p>
+        <div class="pillRow">
+          <span class="pill">Homeowners</span>
+          <span class="pill">Contractors</span>
+          <span class="pill">Businesses</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section--alt" id="contact">
+    <div class="container contact">
+      <div>
+        <div class="section__head">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="contactCards">
+          <div class="miniCard">
+            <div class="miniCard__t">Phone</div>
+            <a href="tel:+440000000000">+91 99940 56217</a><br>
+            <a href="tel:+440000000000">+91 92444 44922</a>
+          </div>
+         <div class="miniCard">
+  <div class="miniCard__t">WhatsApp Message</div>
+
+  <div class="waButtons">
+    <a class="waBtn" target="_blank" rel="noreferrer"
+       href="https://wa.me/919994056217?text=Hello%20E%20P%20HARDWARE%2C%20I%20need%20a%20quote.">
+      Pothi Raj
+    </a>
+
+    <a class="waBtn" target="_blank" rel="noreferrer"
+       href="https://wa.me/919244444922?text=Hello%20E%20P%20HARDWARE%2C%20I%20need%20a%20quote.">
+      Edward
+    </a>
+  </div>
+</div>
+
+          <div class="miniCard">
+            <div class="miniCard__t">Location</div>
+            <span>1st FLOOR, 1015, Mettupalayam Rd, near Crosscut Signal, R.S. Puram, Coimbatore, Tamil Nadu 641002, India</span>
+          </div>
+        </div>
+
+        <div class="map">
+          <iframe
+    src="https://www.google.com/maps?q=E+P+HARDWARE,+1st+Floor,+1015,+Mettupalayam+Rd,+near+Crosscut+Signal,+RS+Puram,+Coimbatore,+Tamil+Nadu+641002&output=embed"
+    width="100%"
+    height="220"
+    style="border:0; border-radius:16px;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+        </div>
+      </div>
+
+      <form class="form card" id="quoteForm">
+        <h3>Request a quote</h3>
+
+        <label>
+          Name
+          <input required name="name" type="text" placeholder="Your name" />
+        </label>
+
+        <label>
+          Phone / Email
+          <input required name="contact" type="text" placeholder="How we can reach you" />
+        </label>
+
+        <label>
+          What do you need?
+          <textarea required name="message" rows="5" placeholder="Example: 20kg cement x 10, 1/2 inch PVC pipe x 30m, wood screws 50mm x 5 boxes..."></textarea>
+        </label>
+
+        <button class="btn btn--primary" type="submit">Send request</button>
+
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+       <a class="logo" href="#top">
+       <img src="logo.png" alt="Your Hardware Logo" class="logo-img">
+        </a> 
+
+        <p class="muted small">© <span id="year"></span> EP Hardware. All rights reserved.</p>
+      </div>
+
+      <div class="footer__links">
+        <a href="#services">Services</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating actions -->
+  <div class="fab">
+    <a class="fab__btn" href="tel:+440000000000" aria-label="Call">📞</a>
+    <a class="fab__btn" target="_blank" rel="noreferrer"
+       href="https://wa.me/440000000000?text=Hello%20I%20need%20help%20with%20hardware%20items"
+       aria-label="WhatsApp">💬</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
