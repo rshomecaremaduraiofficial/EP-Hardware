@@ -20,22 +20,22 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 const categories = [
   {
     title: "HARDWARE MATERIALS",
-    desc: "Handles, locks, hinges, fittings and general hardware items",
+    desc: "Handles, locks, hinges, Bath fittings and general hardware Materials",
     items: ["Door locks & handles", "Hinges & fittings", "Fasteners & accessories", "General hardware"]
   },
   {
     title: "KITCHEN ACCESSORIES",
-    desc: "Modern kitchen fittings for modular kitchens and interiors",
+    desc: "Modular kitchen fittings and Kitchen Accessories",
     items: ["Drawer channels", "Kitchen baskets", "Cabinet hinges", "Soft-close accessories"]
   },
   {
     title: "PLYWOOD",
-    desc: "Quality plywood options for furniture and interior works",
+    desc: "Quality Branded plywood options for furniture and interior works",
     items: ["Commercial plywood", "Marine plywood", "Block boards", "Furniture-grade plywood"]
   },
   {
     title: "LAMINATE SHEETS",
-    desc: "Decorative laminates in many colors, textures and finishes",
+    desc: "Decorative laminates in many colours, textures, finishes and Louvers",
     items: ["Glossy & matte laminates", "Textured finishes", "Interior laminates", "Design patterns"]
   }
 ];
