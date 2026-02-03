@@ -352,77 +352,35 @@
         </div>
       </div>
 
-      <form action="https://formsubmit.co/rshomecaremaduraiofficial@gmail.com" method="POST">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_subject" value="New Enquiry">
-        <input type="hidden" name="_template" value="table">
+    <form class="form card" id="quoteForm">
         <h3>Request a quote</h3>
-<div class="form-group">
+
         <label>
           Name
           <input required name="name" type="text" placeholder="Your name" />
         </label>
-</div>
-<div class="form-group">
+
+
         <label>
           Phone / Email
           <input required name="contact" type="text" placeholder="How we can reach you" />
         </label>
-</div>
-<div class="form-group">
+
         <label>
           What do you need?
           <textarea required name="message" rows="5" placeholder="Your Products"></textarea>
         </label>
-</div>
-        <div id="successMessage" style="
-  display:none;
-  margin-top:15px;
-  padding:14px;
-  border-radius:12px;
-  background:rgba(46,204,113,0.15);
-  color:#1e7e34;
-  font-size:14px;
-  font-weight:600;
-  text-align:center;
-">
-  ✅ Your enquiry is successfully submitted.<br>
-  Our team will contact you shortly.
-</div>
 
-<div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;">
+
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
           <button type="submit">Send Enquiry</button>
-          <a href="agreements.html" target="_blank" class="view-agreement">View Agreement</a>
-        </div>
+          
+      
       </form>
     </div>
-    </div>
   </section>
-  <script>
-const form = document.getElementById("enquiryForm");
-const successMsg = document.getElementById("successMessage");
-
-form.addEventListener("submit", function () {
-  // Show success message
-  successMsg.style.display = "block";
-
-  // Clear form after submit
-  setTimeout(() => {
-    form.reset();
-  }, 300);
-
-  // Hide message after 6 seconds (optional)
-  setTimeout(() => {
-    successMsg.style.display = "none";
-  }, 6000);
-});
-function toggleNav(){
-  document.getElementById("navMenu").classList.toggle("show");
-}
-function closeNav(){
-  document.getElementById("navMenu").classList.remove("show");
-}
-</script>
+  
 
   <footer class="footer">
     <div class="container footer__inner">
@@ -454,6 +412,7 @@ function closeNav(){
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
